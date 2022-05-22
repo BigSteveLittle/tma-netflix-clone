@@ -75,6 +75,32 @@ ul {
     /* font-weight: bold; */
     box-shadow: none;
 }
+/* TABLES. */
+.table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    /* border-spacing: 0; only has an effect if border-collapse: separate */
+}
+.table tbody tr td {
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+    color: #999;
+}
+.table tbody tr td i {
+    padding: 0;
+    font-size: 1rem;
+}
+.table thead tr th {
+    padding: 0.8rem;
+    text-transform: uppercase;
+}
+.table tbody tr:nth-child(odd) {
+    background: #222;
+}
+.table tbody tr td:first-child {
+    text-align: left;
+}
 /* TEXT */
 .text-center {
     text-align: center;
@@ -85,6 +111,10 @@ ul {
 .text-lg {
     margin-bottom: 1rem;
     font-size: 1.8rem;
+}
+.text-md {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
 }
 .text-xl {
     margin-bottom: 1rem;
@@ -129,6 +159,7 @@ ul {
 .showcase-content p {
     max-width: 800px;
     margin-bottom: 2rem;
+    padding: 1rem auto;
     text-transform: uppercase;
     font-size: 1.9rem;
     font-weight: 400;
@@ -171,7 +202,7 @@ ul {
 }
 .tabs p {
     padding-top: 0.5rem;
-    font-size: 4px;
+    font-size: 1.2rem;
 }
 .tabs .container {
     display: grid;
@@ -201,5 +232,57 @@ ul {
     justify-content: center;
     gap: 2rem;
 }
-
+#tab-2-content .tab-2-top-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#tab-2-content .tab-2-bottom-content {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+#tab-3-content .tab-3-top-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+/* FOOTER. */
+.footer {
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+.footer, .footer a {
+    font-size: 0.9rem;
+    color: #999;
+}
+.footer li {
+    line-height: 2;
+}
+.footer p {
+    margin-bottom: 1.5rem;
+}
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.9rem;
+}
+/* MEDIA QUERIES. */
+@media(max-width: 960px) {
+    .showcase {
+        height: 70vh;;
+    }
+    .hide-sm {
+        display: none;
+    }
+}
 /* Video time 51:41. */
