@@ -225,6 +225,12 @@ ul {
     background: black;
     color: white;
 }
+#tab-1-content, #tab-2-content, #tab-3-content {
+    display: none;
+}
+.show {
+    display: block !important;
+}
 #tab-1-content .tab-1-inner-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -278,11 +284,72 @@ ul {
 }
 /* MEDIA QUERIES. */
 @media(max-width: 960px) {
-    .showcase {
-        height: 70vh;;
+    .footer .footer-cols {
+        grid-template-columns: repeat(2, 1fr);
     }
     .hide-sm {
         display: none;
+    }
+    .showcase {
+        height: 80vh;
+    }
+    .showcase-content h1 {
+        font-size: 3.7rem;
+        line-height: 1;
+    }
+    .showcase-content h3 {
+        font-size: 1.4rem;
+        line-height: 1;
+    }
+    .showcase-content P {
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+    .showcase-top img {
+        top: 30%;
+        left: 5%;
+        transform: translate(0);
+    }
+    .btn-xl {
+        padding: 1.4rem 2rem;
+        font-size: 1.5rem;
+    }
+    .text-lg {
+        font-size: 1.3rem;
+    }
+    .text-md {
+        font-size: 1rem;
+    }
+    .text-xl {
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 700px) {
+    .showcase::after {
+        background: rgba(0, 0, 0, 0.4);
+        box-shadow: inset 80px 80px 350px black, 
+                    inset -80px -80px 350px black;
+    }
+    #tab-1-content .tab-1-inner-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    #tab-2-content .tab-2-top-content {
+        display: block;
+        text-align: center;
+    }
+    #tab-2-content .tab-2-bottom-content {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    #tab-3-content .tab-3-top-content {
+        display: block;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
     }
 }
 /* Issue: mobile media queries showcase height collapse.
