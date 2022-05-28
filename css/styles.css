@@ -284,6 +284,10 @@ ul {
 }
 /* MEDIA QUERIES. */
 @media(max-width: 960px) {
+    .btn-xl {
+        padding: 1.4rem 2rem;
+        font-size: 1.5rem;
+    }
     .footer .footer-cols {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -291,7 +295,7 @@ ul {
         display: none;
     }
     .showcase {
-        height: 80vh;
+        height: 70vh;;
     }
     .showcase-content h1 {
         font-size: 3.7rem;
@@ -309,10 +313,6 @@ ul {
         top: 30%;
         left: 5%;
         transform: translate(0);
-    }
-    .btn-xl {
-        padding: 1.4rem 2rem;
-        font-size: 1.5rem;
     }
     .text-lg {
         font-size: 1.3rem;
