@@ -43,6 +43,7 @@ ul {
     border-radius: 2px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
     color: white;
+    opacity: 0.95;
     outline: none;
     cursor: pointer;
 }
@@ -50,17 +51,16 @@ ul {
     border-radius: 5px;
 }
 .btn-lg {
-    padding: 0.8rem 1.3rem;
-    font-size: 1rem;
-    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    font-size: 1.7rem;
+    line-height: 1;
 }
 .btn-xl {
     padding: 1.5rem 2.1rem;
     font-size: 2rem;
-    text-transform: uppercase;
 }
 .btn:hover {
-    opacity: 0.85;
+    opacity: 1;
 }
 .container {
     max-width: 70%;
@@ -69,11 +69,7 @@ ul {
     overflow: hidden;
 }
 .fas {
-    margin: 0;
-    padding: 0 0 0 0.8rem;
-    font-size: 1.7rem;
-    /* font-weight: bold; */
-    box-shadow: none;
+    
 }
 /* TABLES. */
 .table {
@@ -125,7 +121,7 @@ ul {
     position: relative;
     width: 100%;
     height: 93vh;
-    background: black url(../img/background.jpg) center center / cover no-repeat;
+    background: black url(../img/AU-en-20220523-popsignuptwoweeks-perspective_alpha_website_large.jpg) center center / cover no-repeat;
 }
 .showcase-content {
     position: relative;
@@ -160,8 +156,7 @@ ul {
     max-width: 800px;
     margin-bottom: 2rem;
     padding: 1rem auto;
-    text-transform: uppercase;
-    font-size: 1.9rem;
+    font-size: 1.13rem;
     font-weight: 400;
     line-height: 1.25;
     color: white;
@@ -174,13 +169,18 @@ ul {
 }
 .showcase-top img {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 5%;
+    transform: translate(0);
     width: 170px;
 }
 .showcase-content .fas {
-    margin-left: 0.8rem;
+    vertical-align: 0.11rem;
+    margin: 0 0 0 0.8rem;
+    padding: 0 0 0 0;
+    font-size: 1.3rem;
+    line-height: 1;
+    box-shadow: none;
 }
 .showcase::after {
     content: '';
